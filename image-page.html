@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Image Page</title>
+<style>
+      html {
+  box-sizing: border-box;
+   overflow-y: scroll;
+  height:fit-content;
+  width:100%;
+  overflow-x: hidden;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+ 
+*, *:before, *:after {
+  box-sizing:inherit;}
+  body::-webkit-scrollbar{
+  display: none;
+}
+body{
+    margin: 0px;
+    background-color:black ;
+}
+    .im{
+        margin-left: 120px;
+        margin-right: 100px;
+
+        height: 900px;
+        width: 80%;
+    }
+    .p{
+        height: 900px;
+        width: 100%;
+
+    }
+    .cross{
+height: 30px;
+width:40px;
+float:right;
+position: absolute;
+right:80px;
+top:0px;
+    }
+</style>
+</head>
+<body>
+    <div class="p">
+    <img id="imageDisplay" src="" alt="Image" class="im">
+<img src="images/home_gallary/close2.png" class="cross" onclick="ch1()"></div>
+
+    <script>
+        // Retrieve the image path from the query parameter
+        var queryParams = new URLSearchParams(window.location.search);
+        var imagePath = queryParams.get("image");
+
+        // Set the image source to display the image
+        var imageDisplay = document.getElementById("imageDisplay");
+        imageDisplay.src = imagePath;
+        function ch1(){
+            window.location.href="gallary.html";
+        }
+
+
+    </script>
+</body>
+</html>

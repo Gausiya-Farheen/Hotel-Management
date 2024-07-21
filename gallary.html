@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel+Decorative&family=Cinzel:wght@400;500&family=Orbitron:wght@500&family=Playfair:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <title>GALLARY</title>
+    <script>
+        function ch1(x){
+    x.style.height="310px";
+    x.style.width="360px";
+  }
+  function ch2(x){
+    x.style.height="300px";
+    x.style.width="350px";
+  }
+  function ch3(x) {
+  var pathname = x.getAttribute("src");
+  window.location.href = "image-page.html?image=" + encodeURIComponent(pathname);
+  return false;
+}
+function ch4(x) {
+  var pathname = x.getAttribute("src");
+  window.location.href = pathname;
+}
+
+
+    </script>
+    <style>
+         html {
+  box-sizing: border-box;
+   overflow-y: scroll;
+  height:fit-content;
+  width:100%;
+  overflow-x: hidden;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+ 
+*, *:before, *:after {
+  box-sizing:inherit;}
+  body::-webkit-scrollbar{
+  display: none;
+}
+body{
+    margin: 0px;
+    background-color:beige ;
+}
+       video, img{
+    height:300px;
+    width:350px;
+    border-radius:5px ;
+    margin:25px 55px;
+
+    } 
+    h1{
+ 
+ font-family: 'Bruno Ace SC', cursive;
+ font-size: 150px;
+ font-weight:400;
+ width:100%;
+  height:135px;
+  margin-top: 0px;
+  text-align: center;
+  background-image: url('images/home_gallary/ab6.jpg');
+   background-repeat: no-repeat;
+   background-position: center ;
+   background-size:cover;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: transparent;
+
+ }
+ 
+
+    </style>
+</head>
+<body>
+  <h1>GALLARY</h1>
+    <img src="images/home_gallary/1.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/2.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/3.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/4.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/5.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/6.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/7.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/8.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/9.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/10.jpeg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/11.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="image/intext1.avif" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/12.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/13.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/14.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/15.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/16.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_gallary/17.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="image/aboveView.avif" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="image/ext1.avif" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="image/fulview.avif" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="image/hotel.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <video src="image/hotel-1188.mp4" controls  onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch4(this)"></video>
+    <img src="image/hotel.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="image/swim.avif" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/home_bg.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+    <img src="images/hext.jpg" onmouseover="ch1(this)"onmouseout="ch2(this)"onclick="ch3(this)">
+</body>
+</html>
